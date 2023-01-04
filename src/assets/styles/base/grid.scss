@@ -1,0 +1,21 @@
+.wrap {
+  @include wrap;
+}
+.col {
+  @include col;
+}
+.xl-gutter-16 {
+  @include wrap('gutter', 16);
+}
+.xl-center {
+  @include wrap('center');
+}
+.xl-middle {
+  @include wrap('middle');
+}
+.xl-auto {
+  @include wrap(auto);
+}
+.xl-2 {
+  @include wrap(2);
+}
