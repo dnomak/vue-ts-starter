@@ -16,6 +16,9 @@
 .xl-auto {
   @include wrap(auto);
 }
+.xl-gutter-8 {
+  @include wrap('gutter', 8);
+}
 .xl-2 {
   @include wrap(2);
 }

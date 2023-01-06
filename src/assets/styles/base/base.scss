@@ -62,8 +62,10 @@ html {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--gray-100);
 }
 
 body {
+  position: relative;
   min-height: 100vh;
 }
