@@ -4,8 +4,8 @@
 .col {
   @include col;
 }
-.xl-gutter-16 {
-  @include wrap('gutter', 16);
+.xl-flexbox {
+  @include wrap('flexbox');
 }
 .xl-center {
   @include wrap('center');
@@ -16,8 +16,14 @@
 .xl-auto {
   @include wrap(auto);
 }
+.xl-gutter-4 {
+  @include wrap('gutter', 4);
+}
 .xl-gutter-8 {
   @include wrap('gutter', 8);
+}
+.xl-1 {
+  @include wrap(1);
 }
 .xl-2 {
   @include wrap(2);
