@@ -37,7 +37,7 @@ export default {
   right: 24rem;
   display: inline-block;
   background-color: var(--white);
-  padding: 0 16rem 16rem 16rem;
+  padding: 0 16rem 8rem 16rem;
   border-radius: 8rem;
   width: 100%;
   max-width: 280rem;
@@ -59,6 +59,7 @@ export default {
   font-weight: 700;
   text-align: center;
   font-size: 14rem;
+  margin-bottom: 8rem;
   &.active {
     background-color: var(--gray-300);
   }
