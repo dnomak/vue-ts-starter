@@ -2,13 +2,13 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import vueI18n from '@intlify/vite-plugin-vue-i18n'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 
 export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    vueI18n({
+    VueI18nPlugin({
       compositionOnly: false,
       include: fileURLToPath(new URL('./src/locales/**', import.meta.url)),
     }),
