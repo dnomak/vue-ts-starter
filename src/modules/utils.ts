@@ -1,4 +1,4 @@
-export function cacheControlForLocalStorage(
+export function removeOldLocalStorageData(
   storeName: string,
   storeVersion: string
 ) {
@@ -10,5 +10,5 @@ export function cacheControlForLocalStorage(
 }
 
 export default {
-  cacheControlForLocalStorage,
+  removeOldLocalStorageData,
 }
