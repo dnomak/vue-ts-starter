@@ -1,5 +1,6 @@
 <script lang="ts">
 import { mapStores } from 'pinia'
+
 import { useOptionsStore } from '@/modules/options/store'
 
 export default {
