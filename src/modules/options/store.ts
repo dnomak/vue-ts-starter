@@ -12,7 +12,7 @@ export const useOptionsStore = defineStore(storeName, {
     }
   },
   actions: {
-    changeLocale(value: string) {
+    setLocale(value: string) {
       this.locale = value
     },
   },

@@ -6,7 +6,7 @@ import { useOptionsStore } from '@/modules/options/store'
 export default {
   name: 'ComponentOptions',
   created() {
-    this.changeLocale(
+    this.setLocale(
       !this.optionsStore.locale ? this.$i18n.locale : this.optionsStore.locale
     )
   },
@@ -14,9 +14,9 @@ export default {
     ...mapStores(useOptionsStore),
   },
   methods: {
-    changeLocale(value: string) {
+    setLocale(value: string) {
       this.$i18n.locale = value
-      this.optionsStore.changeLocale(value)
+      this.optionsStore.setLocale(value)
     },
   },
 }
@@ -29,7 +29,7 @@ export default {
     .col(v-for="locale in $i18n.availableLocales")
       a.options-item(
         href="#"
-        @click="changeLocale(locale)"
+        @click="setLocale(locale)"
         :class="{ active: optionsStore.locale == locale }"
       )
         | {{ $t('Language', locale) }}
